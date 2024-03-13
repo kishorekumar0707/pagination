@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagination</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <H1 id="title">pagination</H1>
+  <p id="description">hereby I have done pagination</p>
+  <div id="buttons" class="d-flex justify-content-center">
+
+    <div class="buttons">
+        <button id="first-button" onclick="generatePage(1)">First</button>
+        <button id="previous-button" onclick="generatePage(currentPage-1)" >Previous</button>
+        <span id="dynamicbuttons"></span>
+        <button id="next-button" onclick="generatePage(currentPage+1)" >Next</button>
+        <button id="last-button" onclick="generatePage(lastPage)">Last</button>
+        <span id="currentPage"></span>
+    </div>
+  </div>
+  
+    <div class="table-responsive">
+      <div id="container">
+    <table class="table table-bordered">
+        <thead>
+            <tr id="heading"></tr>
+        </thead>
+        <tbody id="data">
+
+        </tbody>
+    </table>
+  </div>
+</div>
+    <script src="script.js" ></script>
+    <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+</body>
+
+</html>
